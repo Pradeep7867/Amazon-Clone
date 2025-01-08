@@ -1,22 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amazon</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Amazon Clone - Header</title>
+  <link rel="icon" type="image/png" href="./Assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
+
+<body lang="en">
+  <header role="banner">
     <div class="navbar">
+      <!-- Logo Section -->
       <div class="nav-logo border">
         <div class="logo">
-         <img src="./Assets/amazon_logo.png" alt="Amazon Logo" style="width: 100px ;"> 
-
+          <img src="./Assets/amazon_logo.png" alt="Amazon Logo - Home Button" style="width: 100px;">
         </div>
       </div>
+      
+      <!-- Address Section -->
+      <div class="nav-address border">
+        <p class="add-first"> Deliver to Pradeep</p>
+        <div class="add-icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="add-second">India 305001</p>
+        </div>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="nav-search">
+        <select class="search-select" aria-label="Search Categories">
+          <option value="">All</option>
+        </select>
+        <input type="text" placeholder="Search Amazon" aria-label="Search Amazon" class="search-input">
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      
+      <!-- Region and Language -->
+      <div class="nav-region border">
+        <span class="nav-second">EN</span>
+      </div>
+      
+      <!-- Sign-In Section -->
+      <div class="nav-signin border">
+        <p class="nav-first"><span>Hello, sign in</span></p>
+        <p class="nav-second">Account & Lists</p>
+      </div>
+      
+      <!-- Returns & Orders Section -->
+      <div class="Return border">
+        <p class="nav-first"><span>Returns</span></p>
+        <p class="nav-second">& Orders</p>
+      </div>
+      
+      <!-- Cart Section -->
+      <div class="nav-Cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span>
+      </div>
     </div>
+
+    <!-- Secondary Navigation Panel -->
+    <nav role="navigation" class="panel">
+      <div class="panel-all">
+        <i class="fa-solid fa-bars"></i> All
+      </div>
+      <div class="panel-ops">
+        <a href="#" class="border">Today's Deals</a>
+        <a href="#" class="border">Buy Again</a>
+        <a href="#" class="border">Gift Cards</a>
+        <a href="#" class="border">Pradeep's Amazon.com</a>
+        <a href="#" class="border">Customer Service</a>
+        <a href="#" class="border">Browsing History</a>
+        <a href="#" class="border">Registry</a>
+      </div>
+      <div class="panel-deals">
+        Shop Deals in Electronics
+      </div>
+    </nav>
   </header>
-</body>
+
+  <!-- Hero Section -->
+   <section class="Main">
+
+     <div class="hero-Section">
+       <div class="hero-msg">
+         <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+           <a href="https://www.amazon.in/" target="_blank" referrerpolicy="no-referrer" >Click here to go to amazon.in</a>
+          </p>
+        </div>
+      </div>
+      
+      <div class="shop-Section">
+        <div class="box1 box">
+          <h2>Shop for your home essentials</h2>
+          <div class="box-img">
+            <p>See More</p>
+          </div>
+        </div>
+        <div class="box2 box">Box2</div>
+        <div class="box3 box">Box3</div>
+        <div class="box4 box">Box4</div>
+      </div>
+    </section>
+    </body>
+
 </html>
