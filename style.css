@@ -8,6 +8,7 @@ body{
   background-color: #E3E6E6
 
 }
+
 .navbar {
   height: 60px;
   background-color: #0F1111;
@@ -172,13 +173,14 @@ body{
 /* Hero Section  */
 .hero-Section {
 
-  height: 400px;
+  height: 600px;
   background-image: url(Assets/hero-Image5.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-}
+  position: relative;}
+
 .hero-msg
 {
   background-color: #f5f6f6;
@@ -198,70 +200,99 @@ body{
   text-decoration: none;
 }
 
-/* Shop-Section */
-.shop-Section
-{
+
+/* Shop Section */
+.shop-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+  background-color: #f4f4f4; /* Light background for contrast */
+  position: relative;
 }
-
-.shop-Section .container
-{
-  max-width: 600px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      text-align: center;
+.shop-section::before {
+  background: linear-gradient(-180deg,rgba(234,237,237,0),#E3E6E6);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 250px;
+  z-index: 1;
 }
-.shop-Section h2
-{
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.container .card-container
-{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap : 15px; 
-}
-
-
-.card {
+.shop-container {
+  width: 23%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
+.shop-container h2 {
+  font-size: 24px;
+  color: #0F1111;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.shop-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.shop-card img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 8px;
   object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #555;
-  margin: 0;
 }
 
 .discover-link {
   display: inline-block;
   margin-top: 20px;
+  font-size: 16px;
   font-weight: bold;
+  color: #007185;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #007185;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.discover-link:hover {
+  background-color: #007185;
+  color: #fff;
+}
+
+/* Hover Effect for Container */
+.shop-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shop-section {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .shop-container {
+    width: 80%;
+    height: auto;
+  }
+
+  .shop-card img {
+    max-height: 200px;
+  }
 }
 
