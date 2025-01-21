@@ -4,9 +4,9 @@
   border: border-box;
 
 }
-body{
-  background-color: #E3E6E6
 
+body {
+  background-color: #E3E6E6
 }
 
 .navbar {
@@ -59,18 +59,18 @@ body{
   color: #FFFFFF;
 }
 
-/* Box #3 */
 .nav-search {
   display: flex;
-  background-color: #FEBD68;
+  background-color: #FEBD68; /* Background color */
   width: 850px;
   height: 40px;
-  border-radius: 4px;
-  justify-content: space-evenly;
+  border-radius: 4px; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .nav-search input {
-  border: none;
+  border: none; 
+  flex-grow: 1; /* Make input field take up most of the space */
 }
 
 /* Hover effect */
@@ -86,12 +86,16 @@ body{
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: none;
+  display: flex; /* Center content within select */
+  justify-content: center;
+  align-items: center;
 }
 
 .search-input {
-  width: 100%;
+  width: 100%; 
   font-size: 0.85rem;
   color: #0F1111;
+  padding: 0 10px; /* Add some padding for better appearance */
 }
 
 .search-icon {
@@ -101,7 +105,9 @@ body{
   align-items: center;
   font-size: 1.2rem;
   color: #0F1111;
-
+  background-color: #F3F3F3; /* Background color for icon container */
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; /* Match border radius of select */
 }
 
 /* Box 3.5 Region & Order  */
@@ -173,20 +179,22 @@ body{
 /* Hero Section  */
 .hero-Section {
 
-  height: 600px;
-  background-image: url(Assets/hero-Image5.jpg);
+  height: 50vh;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(231, 221, 221, 0.315)),
+    url(Assets/hero-Image5.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  position: relative;}
+  position: relative;
+}
 
-.hero-msg
-{
+.hero-msg {
   background-color: #f5f6f6;
   height: 40px;
   width: 80%;
-  color : #0F1111;
+  color: #0F1111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,8 +202,7 @@ body{
   margin-bottom: 45px;
 }
 
-.hero-msg a
-{
+.hero-msg a {
   color: #007185;
   text-decoration: none;
 }
@@ -207,19 +214,12 @@ body{
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #f4f4f4; /* Light background for contrast */
+  flex-wrap: wrap;
+  /* Light background for contrast */
   position: relative;
 }
-.shop-section::before {
-  background: linear-gradient(-180deg,rgba(234,237,237,0),#E3E6E6);
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 250px;
-  z-index: 1;
-}
+
+/*  */
 .shop-container {
   width: 23%;
   height: 400px;
@@ -279,6 +279,117 @@ body{
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+
+/* footer section */
+
+.footpanel1 {
+  background-color: #485769;
+  color: #FFFFFF;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+/* Foot Panel 2 */
+.footpanel2 {
+  padding-top: 35px;
+  background-color: #222f3d;
+  height: 500px;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+ul a {
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+  color: #DDD;
+  font-size: 0.85rem;
+}
+
+/* foot Panel 3 */
+.footpanel3 {
+  background-color: #222f3d;
+  border-top: 0.5px solid #3A4553;
+  height: 78px;
+  padding: 20px;
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 70px;
+  margin-top: 15px;
+}
+
+.logo p {
+  color: #cccccc;
+  font-size: 0.813rem;
+  font-weight: 600;
+  display: inline-block !important;
+  border: 1px solid #848688;
+  border-radius: 3px;
+  padding: 6px 18px 6px 8px;
+  margin-right: 4px;
+}
+
+.logo a {
+
+  color: #cccccc;
+  font-size: 0.813rem;
+  font-weight: 600;
+  display: inline-block !important;
+  border: 1px solid #848688;
+  border-radius: 3px;
+  padding: 6px 18px 6px 8px;
+  margin-right: 4px;
+  text-decoration: none;
+}
+ .logo a i 
+ {
+  padding-right: 4px;
+ }
+
+ /* Foot Panel 4  */
+.footpanel4
+{
+  background-color: #131A22;
+  height: 100px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages a 
+{
+  color: #cccccc;
+  font-size: 0.75rem;
+  padding: 0px 14px ;
+  color: #cccccc;
+  text-decoration: none;
+}
+.copyright 
+{
+    font-size: 0.75rem;
+    color: #DDD;
+    text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .shop-section {
@@ -295,4 +406,3 @@ body{
     max-height: 200px;
   }
 }
-
