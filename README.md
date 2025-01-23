@@ -1,6 +1,6 @@
 # Amazon Clone Project
 
-A simplified Amazon clone created using **HTML** and **CSS**. This project is focused on beginners to practice and enhance their skills in web design and layout.
+A simplified Amazon clone created using **HTML** , **CSS** and **JavaScript**. This project is focused on beginners to practice and enhance their skills in web design and layout.
 
 ## Features
 
