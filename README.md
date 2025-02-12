@@ -32,8 +32,9 @@ A simplified Amazon clone created using **HTML** , **CSS** and **JavaScript**. T
    ```
 2. Navigate to the project using this:
 
-      [Eccomerce] (https://pradeep7867.github.io/E-Commerce-Project/)
-3. Open `index.html` in your browser to view the project.
+      [Eccomerce](https://pradeep7867.github.io/E-Commerce-Project/)
+   
+4. Open `index.html` in your browser to view the project.
 
 
 ## Future Enhancements
