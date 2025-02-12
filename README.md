@@ -31,9 +31,8 @@ A simplified Amazon clone created using **HTML** , **CSS** and **JavaScript**. T
    git clone https://github.com/your-username/E-Commerce-Project-html-css.git
    ```
 2. Navigate to the project using this:
-   ```bash
+
       [Eccomerce] (https://pradeep7867.github.io/E-Commerce-Project/)
-   ```
 3. Open `index.html` in your browser to view the project.
 
 
