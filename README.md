@@ -30,25 +30,18 @@ A simplified Amazon clone created using **HTML** , **CSS** and **JavaScript**. T
    ```bash
    git clone https://github.com/your-username/E-Commerce-Project-html-css.git
    ```
-2. Navigate to the project directory:
+2. Navigate to the project using this:
    ```bash
-
+      [Eccomerce] (https://pradeep7867.github.io/E-Commerce-Project/)
    ```
 3. Open `index.html` in your browser to view the project.
 
-## Folder Structure
-```
-```
 
 ## Future Enhancements
 
 - Add interactivity using JavaScript.
 - Implement a backend to handle dynamic content.
 
-## License
 
-This project is open-source and available under the [MIT License](LICENSE).
-
----
 
 Happy coding! 😊
